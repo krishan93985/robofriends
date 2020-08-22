@@ -30,16 +30,14 @@ class App extends React.Component {
 
   render() {
     const { searchField, onSearchChange, robots, isPending } = this.props;
-    var changedarray;
-    if (isPending === false) {
-           changedarray = robots.filter((robot) => {
+    
+        const changedarray = robots.filter((robot) => {
         return robot.username.toLowerCase().includes(searchField.toLowerCase());
       });
-    }
 
     return (
       <div className="tc">
-        <Header />
+        <Header robots={changedarray} />
         <Searchbox onsearch={onSearchChange} />
         <Scroll>
           {isPending ? (

@@ -5,11 +5,11 @@ import Counter from './Counter';
 //for within state comparison use useMemo (see docs)
 //use shouldComponentUpdate for class based components
 //to avoid shouldCom...Update use PureComponents in react
-const Header = memo(() => {
+const Header = memo(({robots}) => {
     return (
         <div>
-        <h1 className='f1'>Robofriends</h1>
-        <Counter />
+        <h1 style={{fontSize:"2.9rem", maxWidth:"100%"}}>Robofriends</h1>
+        <Counter robots={robots} />
         </div>
     );
 })
