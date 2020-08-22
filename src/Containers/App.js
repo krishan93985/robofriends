@@ -35,14 +35,16 @@ class App extends React.Component {
             return robot.username.toLowerCase().includes(searchField.toLowerCase());
             });
             
-            return isPending ?
-            <h1 className='tc'>Loading...</h1> :
-     (
+            return(
      <div className='tc'> 
          <Header />
          <Searchbox onsearch={onSearchChange}/>
          <Scroll> 
-         <Cardarray robots={changedarray}/>
+         {
+             isPending ?
+             <h1 className='tc'>Loading...</h1> :
+             <Cardarray robots={changedarray}/>
+         }
          </Scroll>
      </div>
      );
