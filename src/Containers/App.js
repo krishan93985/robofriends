@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../Components/Header';
 import Cardarray from '../Components/Cardarray';
 import Searchbox from '../Components/Searchbox';
 import Scroll from '../Components/Scroll';
@@ -38,7 +39,7 @@ class App extends React.Component {
             <h1 className='tc'>Loading...</h1> :
      (
      <div className='tc'> 
-         <h1 className='f1'>Robofriends</h1>
+         <Header />
          <Searchbox onsearch={onSearchChange}/>
          <Scroll> 
          <Cardarray robots={changedarray}/>

@@ -1,6 +1,7 @@
 import React from 'react';
 
-const searchBox = ({onsearch}) => {
+const SearchBox = ({onsearch}) => {
+    console.log('searchBox')
     return (
         <div className='pa2'>
             <input
@@ -13,4 +14,4 @@ const searchBox = ({onsearch}) => {
     );
 }
 
-export default searchBox;
+export default SearchBox;
