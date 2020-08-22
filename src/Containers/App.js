@@ -30,8 +30,8 @@ class App extends React.Component {
 
   render() {
     const { searchField, onSearchChange, robots, isPending } = this.props;
-    var changedarray = [];
-    if (isPending == false) {
+    var changedarray;
+    if (isPending === false) {
            changedarray = robots.filter((robot) => {
         return robot.username.toLowerCase().includes(searchField.toLowerCase());
       });
