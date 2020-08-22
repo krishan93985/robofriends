@@ -6,7 +6,6 @@ import Counter from './Counter';
 //use shouldComponentUpdate for class based components
 //to avoid shouldCom...Update use PureComponents in react
 const Header = memo(() => {
-    console.log('Header')
     return (
         <div>
         <h1 className='f1'>Robofriends</h1>
