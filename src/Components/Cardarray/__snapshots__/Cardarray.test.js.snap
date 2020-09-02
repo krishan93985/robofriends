@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is Testing Card component 1`] = `
+<div>
+  <Card
+    email="trish@gmail.com"
+    id="1"
+    key="0"
+    name="trish"
+    username="trish12345"
+  />
+</div>
+`;

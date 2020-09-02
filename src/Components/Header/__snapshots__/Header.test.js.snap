@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is Header component correctly rendered 1`] = `
+<div>
+  <h1
+    style={
+      Object {
+        "fontSize": "2.9rem",
+        "maxWidth": "100%",
+      }
+    }
+  >
+    Robofriends
+  </h1>
+  <Counter />
+</div>
+`;

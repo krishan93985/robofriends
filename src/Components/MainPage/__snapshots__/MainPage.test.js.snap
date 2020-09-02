@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPage component renders correctly 1`] = `
+<div
+  className="tc"
+>
+  <Memo() />
+  <SearchBox
+    onsearch={[MockFunction]}
+  />
+  <Scroll>
+    <Cardarray
+      robots={Array []}
+    />
+  </Scroll>
+</div>
+`;

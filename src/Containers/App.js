@@ -1,10 +1,7 @@
 import React from "react";
-import Header from "../Components/Header";
-import Cardarray from "../Components/Cardarray";
-import Searchbox from "../Components/Searchbox";
-import Scroll from "../Components/Scroll";
+import MainPage from '../Components/MainPage/MainPage';
 import { connect } from "react-redux";
-import { setSearchField, requestRobots } from "../actions";
+import { setSearchField, requestRobots } from "../actions/actions";
 import "./App.css";
 
 const mapStateToProps = (state) => {
@@ -24,29 +21,9 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 class App extends React.Component {
-  componentDidMount() {
-    this.props.fetchRobots();
-  }
-
   render() {
-    const { searchField, onSearchChange, robots, isPending } = this.props;
-    
-        const changedarray = robots.filter((robot) => {
-        return robot.username.toLowerCase().includes(searchField.toLowerCase());
-      });
-
     return (
-      <div className="tc">
-        <Header robots={changedarray} />
-        <Searchbox onsearch={onSearchChange} />
-        <Scroll>
-          {isPending ? (
-            <h1 className="tc">Loading...</h1>
-          ) : (
-            <Cardarray robots={changedarray} />
-          )}
-        </Scroll>
-      </div>
+      <MainPage {...this.props} />
     );
   }
 }

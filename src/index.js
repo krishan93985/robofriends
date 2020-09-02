@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
-import { searchRobots, requestRobots } from './reducers'; 
+import { searchRobots, requestRobots } from './reducers/reducers'; 
 import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import './index.css';

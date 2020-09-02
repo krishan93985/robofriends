@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is Counter component correctly rendered 1`] = `
+<button
+  data-count={0}
+  id="counter"
+  onClick={[Function]}
+>
+  Count:
+  0
+</button>
+`;

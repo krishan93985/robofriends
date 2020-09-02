@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is Testing Card component 1`] = `
+<div
+  className="tc grow bg-light-green dib br3 pa3 ma2 bw2 shadow-3"
+>
+  <img
+    alt="icon"
+    src="https://robohash.org/undefined?size=200x200"
+    style={
+      Object {
+        "display": "block",
+        "maxWidth": "100%",
+      }
+    }
+  />
+  <h2 />
+  <p />
+</div>
+`;
