@@ -10,3 +10,4 @@ This app filters robots fetched from jsonplaceholder api and display them dynami
 * Used **Redux** for state management of App. 
 * Written **Unit Tests** with **Jest** and **Enzyme** followed by **Snapshot Testing**. 
 * Converted into a **Progressive Web App** Using _manifest.json_ , _Service workors, Cache API_ and _https_.
+* Used **circleci CI/CD** pipeline to deploy.
