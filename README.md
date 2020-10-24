@@ -2,7 +2,7 @@
 
 This app filters robots fetched from jsonplaceholder api and display them dynamically.
 
-# What i Learned
+# What I Learned
 
 * I built my first ever **React** component. 
 * I leaned how to make **AJAX** calls over the internet. 
